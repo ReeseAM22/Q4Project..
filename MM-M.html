@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<title>MM to M</title>
+
+	<style type="text/css">
+
+	body{
+			background-image: url(Convert.png);
+  			background-size: cover;
+ 		
+}
+
+		h4{
+			font-family: 'Chelsea Market', cursive;
+			color: ghostwhite;
+			font-size: 35px;
+
+		}
+
+		h2, h1{
+			font-family: 'Chelsea Market', cursive;
+			color: ghostwhite;
+		}
+
+		button{
+			size: 100px;
+
+		}
+
+  	.container{
+    	position: absolute;
+    	top: 50%;
+  		left: 50%;
+  		transform: translate(-50%, -50%);
+        background-color: #454695;
+        border-radius:30px;
+
+    width: 600px;
+ 		height: 350px;
+		}
+
+	label{
+		font-size: 45px;
+		color: ghostwhite;
+		font-family: 'Chelsea Market', cursive;
+		text-align: center;
+	}
+	</style>
+</head>
+
+<body>
+	<br>
+
+<div class="container container1 form-control">
+
+	<h2 align="center">Millimeter to Meter</h2>
+
+	<br>
+	<br>
+	<br>
+
+	<div class="row align-items-center" >
+
+     <div class="col-md-5" align="center">
+       <label for="">MM</label>
+            <input type="number" class="form-control" name="mm2">
+
+        </div> 
+
+        <div class="col-md-2 col2">
+            
+            <h1 class="text-center">=</h1>
+            
+        </div>
+
+       <div class="col-md-5" align="center">
+       <label for="">M</label>
+            <input type="number" class="form-control" name="answer" align="center">
+        </div>   
+
+</div>
+
+      <h4 align="center"><button type="button" class="btn btn-light btn-sm" onclick="M()">Calculate!</button></h4>
+       <h4 align="center"><a href="SA_ICT9Ruby_Project_Mamaril.html"><button type="button" class="btn btn-light btn-sm">Go Back</button></h4>
+
+    <script>
+
+    function M() {
+    
+    var m2 = document.getElementsByName("mm2")[0].value;
+
+    var ans = parseFloat(m2) / 1000 ;
+    
+    document.getElementsByName('answer')[0].value= ans;
+
+}
+
+</script>
+
+
+
+
+</div>
+
+
+
+</body>
+</html>
